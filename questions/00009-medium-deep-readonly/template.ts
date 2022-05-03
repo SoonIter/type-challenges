@@ -1,1 +1,0 @@
-type DeepReadonly<T> = any
