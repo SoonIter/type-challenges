@@ -2,12 +2,12 @@
 
 > 由谷歌自动翻译，欢迎 PR 改进翻译质量。
 
-实现高级util类型`RequiredKeys<T>`，该类型将所有必需的键都选择为一个并集。
+实现高级 util 类型`RequiredKeys<T>`，该类型将 T 中所有必需属性的 key 选出，合并为一个联合类型。
 
 例如
 
 ```ts
-type Result = RequiredKeys<{ foo: number; bar?: string }>;
+type Result = RequiredKeys<{ foo: number; bar?: string }>
 // expected to be “foo”
 ```
 

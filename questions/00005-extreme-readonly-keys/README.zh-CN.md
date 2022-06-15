@@ -2,7 +2,7 @@
 
 > 由谷歌自动翻译，欢迎 PR 改进翻译质量。
 
-实现泛型`GetReadonlyKeys<T>`，该`GetReadonlyKeys<T>`返回对象的只读键的并集。
+实现泛型`GetReadonlyKeys<T>`，`GetReadonlyKeys<T>`返回对象 T 中所有只读属性的 key 组成的联合类型。
 
 例如
 
