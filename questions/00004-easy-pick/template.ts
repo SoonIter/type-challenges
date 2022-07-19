@@ -1,1 +1,3 @@
-type MyPick<T, K> = any
+type MyPick<T extends Object, K extends keyof T> = {
+  [P in K]: T[P];
+};
