@@ -1,1 +1,1 @@
-type Unshift<T extends unknown[], U> = [f: U, ...rest: T];
+type Unshift<T extends unknown[], U> = [f: U, ...rest: T]

@@ -2,7 +2,7 @@ type Equals<X, Y> = (<T>() => T extends X ? 1 : 2) extends <T>() => T extends Y
   ? 1
   : 2
   ? true
-  : false;
+  : false
 
 // type GetReadonlyKeys<T> = Required<{
 //   [p in keyof T]: Equals<
@@ -19,10 +19,10 @@ type GetReadonlyKeys<T> = keyof {
   > extends false
     ? p
     : never]-?: T[p];
-};
-type tests = GetReadonlyKeys<Todo2>;
+}
+type tests = GetReadonlyKeys<Todo2>
 interface Todo2 {
-  readonly title: string;
-  readonly description: string;
-  completed?: boolean;
+  readonly title: string
+  readonly description: string
+  completed?: boolean
 }
